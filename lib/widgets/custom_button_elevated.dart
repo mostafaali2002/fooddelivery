@@ -6,26 +6,32 @@ class CustomButtonElevated extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.text,
+    this.width = 300,
+    this.height = 40,
+    this.backgroundColor,
+    this.style = AppStyle.styleBold20,
   });
   final Function()? onPressed;
   final String text;
+  final double width, height;
+  final MaterialStateProperty<Color?>? backgroundColor;
+  final TextStyle? style;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: SizedBox(
-        width: 300,
-        height: 40,
+        width: width,
+        height: height,
         child: ElevatedButton(
           style: ButtonStyle(
               shape: MaterialStatePropertyAll(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10))),
-              backgroundColor:
-                  const MaterialStatePropertyAll(AppStyle.primaryColor)),
+              backgroundColor: backgroundColor),
           onPressed: onPressed,
           child: Text(
             text,
-            style: AppStyle.styleBold20,
+            style: style,
           ),
         ),
       ),

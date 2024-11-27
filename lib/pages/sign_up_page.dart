@@ -50,7 +50,11 @@ class SignUpPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            CustomButtonElevated(onPressed: () {}, text: "Sign up"),
+            CustomButtonElevated(
+              onPressed: () {},
+              text: "Sign up",
+              backgroundColor: MaterialStatePropertyAll(AppStyle.primaryColor),
+            ),
             const SizedBox(height: 20),
             QuestionForLogin(
               onPressed: () {},

@@ -36,7 +36,11 @@ class LoginPage extends StatelessWidget {
           const SizedBox(height: 20),
           CustomCheckBox(),
           const SizedBox(height: 20),
-          CustomButtonElevated(onPressed: () {}, text: "Login"),
+          CustomButtonElevated(
+            onPressed: () {},
+            text: "Login",
+            backgroundColor: MaterialStatePropertyAll(AppStyle.primaryColor),
+          ),
           const SizedBox(height: 20),
           QuestionForLogin(
             onPressed: () {},

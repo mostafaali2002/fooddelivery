@@ -9,9 +9,31 @@ class MyCartModel {
       required this.productSalary});
 }
 
-List<MyCartModel> products = const [
+List<MyCartModel> myProducts = const [
   MyCartModel(
       product: Assets.imagesFruite1, productName: "Fig", productSalary: "100"),
+  MyCartModel(
+      product: Assets.imagesFruite2,
+      productName: "product",
+      productSalary: "100"),
+  MyCartModel(
+      product: Assets.imagesFruite3,
+      productName: "product",
+      productSalary: "100"),
+  MyCartModel(
+      product: Assets.imagesFruite4,
+      productName: "product",
+      productSalary: "150"),
+  MyCartModel(
+      product: Assets.imagesFruite5,
+      productName: "product",
+      productSalary: "150"),
+  MyCartModel(
+      product: Assets.imagesFruite6,
+      productName: "product",
+      productSalary: "150"),
+];
+List<MyCartModel> relatedProducts = const [
   MyCartModel(
       product: Assets.imagesFruite2,
       productName: "product",

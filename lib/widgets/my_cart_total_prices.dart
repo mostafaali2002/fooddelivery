@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooddelivery/pages/home_page.dart';
 import 'package:fooddelivery/utils/app_style.dart';
 import 'package:fooddelivery/utils/assets_app.dart';
 import 'package:fooddelivery/widgets/custom_button_elevated.dart';
@@ -13,15 +14,15 @@ class MyCartTotalPrices extends StatelessWidget {
     return Stack(
       children: [
         Image.asset(Assets.imagesCartShape),
-        Positioned(
+        const Positioned(
           top: 40,
           left: 150,
           child: Text(
-            "subTotal:  1000 E.G",
+            "subTotal:  800 E.G",
             style: AppStyle.styleBold16,
           ),
         ),
-        Positioned(
+        const Positioned(
           top: 70,
           left: 150,
           child: Text(
@@ -35,14 +36,20 @@ class MyCartTotalPrices extends StatelessWidget {
           child: Row(
             children: [
               Text(
-                "1200 E.G",
+                "1000 E.G",
                 style: AppStyle.styleBold20.copyWith(color: Colors.white),
               ),
               CustomButtonElevated(
                 width: 150,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HomePage(),
+                      ));
+                },
                 text: "Finalize order",
-                backgroundColor: MaterialStatePropertyAll(Colors.black),
+                backgroundColor: const MaterialStatePropertyAll(Colors.black),
                 style: AppStyle.styleBold16.copyWith(color: Colors.white),
               )
             ],

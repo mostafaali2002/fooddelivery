@@ -12,6 +12,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppStyle.backgroundColor,
       body: Column(
         children: [
           Image.asset(Assets.imagesLoginshape2),

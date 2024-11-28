@@ -9,11 +9,14 @@ class MyCartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppStyle.backgroundColor,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: AppStyle.backgroundColor,
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon: const Icon(
               Icons.arrow_back_ios,
               color: Colors.black,

@@ -9,9 +9,9 @@ class MyCartProductsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-        itemCount: products.length,
+        itemCount: myProducts.length,
         itemBuilder: (context, index) =>
-            MyCartProductCard(myCartModel: products[index]),
+            MyCartProductCard(myCartModel: myProducts[index]),
       ),
     );
   }

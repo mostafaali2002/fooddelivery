@@ -11,6 +11,7 @@ class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppStyle.backgroundColor,
       body: SingleChildScrollView(
         child: Column(
           children: [

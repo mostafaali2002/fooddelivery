@@ -58,7 +58,7 @@ class _MyCartProductCardState extends State<MyCartProductCard> {
                 CustomButtonElevated(
                   onPressed: () {
                     setState(() {
-                      numberOfProduct--;
+                      if (numberOfProduct > 1) numberOfProduct--;
                     });
                   },
                   text: "-",

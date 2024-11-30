@@ -29,14 +29,17 @@ class CustomTextFieldLogin extends StatelessWidget {
         decoration: InputDecoration(
             prefixIcon: prefixIcon,
             suffixIcon: suffixIcon,
+            suffixIconColor: Colors.black,
+            fillColor: Colors.white,
+            filled: true,
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(5),
                 borderSide: const BorderSide(color: Colors.black)),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(5),
-                borderSide: const BorderSide(color: Colors.black)),
+                borderSide: const BorderSide(color: Colors.white)),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
-            hintText: "Enter Your $hint",
+            hintText: "$hint",
             hintStyle: AppStyle.styleReguler15
                 .copyWith(color: Colors.black.withOpacity(.5))),
       ),

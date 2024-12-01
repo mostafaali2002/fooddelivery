@@ -47,6 +47,16 @@ class MyCartTotalPrices extends StatelessWidget {
                       MaterialPageRoute(
                         builder: (context) => const HomePage(),
                       ));
+                  var snack = const SnackBar(
+                    elevation: 2,
+                    backgroundColor: Colors.green,
+                    content: Text(
+                      "Booking has been completed successfully",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    duration: Duration(seconds: 4),
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(snack);
                 },
                 text: "Finalize order",
                 backgroundColor: const MaterialStatePropertyAll(Colors.black),

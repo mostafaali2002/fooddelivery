@@ -37,7 +37,7 @@ class CustomTextFieldLogin extends StatelessWidget {
                 borderSide: const BorderSide(color: Colors.black)),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(5),
-                borderSide: const BorderSide(color: Colors.white)),
+                borderSide: const BorderSide(color: Colors.black)),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
             hintText: "$hint",
             hintStyle: AppStyle.styleReguler15

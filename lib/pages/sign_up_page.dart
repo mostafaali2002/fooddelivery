@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fooddelivery/pages/home_page.dart';
+import 'package:fooddelivery/pages/login_page.dart';
 import 'package:fooddelivery/utils/app_style.dart';
 import 'package:fooddelivery/utils/assets_app.dart';
 import 'package:fooddelivery/widgets/custom_button_elevated.dart';
@@ -52,13 +54,26 @@ class SignUpPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             CustomButtonElevated(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
+                    ));
+              },
               text: "Sign up",
-              backgroundColor: MaterialStatePropertyAll(AppStyle.primaryColor),
+              backgroundColor:
+                  const MaterialStatePropertyAll(AppStyle.primaryColor),
             ),
             const SizedBox(height: 20),
             QuestionForLogin(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const LoginPage(),
+                    ));
+              },
               text1: "Already have an account ?",
               text2: "Login",
             ),

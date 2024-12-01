@@ -15,37 +15,38 @@ class PersonInfo extends StatelessWidget {
       children: [
         Image.asset(Assets.imagesHomeShape),
         const Positioned(
-          left: 38,
-          top: 20,
+          left: 170,
+          top: 60,
           child: CircleAvatar(
-            radius: 25,
+            radius: 40,
+            backgroundColor: Colors.black54,
           ),
         ),
         const Positioned(
-          left: 20,
-          top: 70,
+          left: 160,
+          top: 150,
           child: WelcomName(),
         ),
         const Positioned(
-          left: 12,
-          top: 90,
+          left: 145,
+          top: 170,
           child: PersonLocation(),
         ),
         Positioned(
-          bottom: 150,
+          bottom: 100,
           left: 0,
           child: Row(
             children: [
               const SizedBox(
-                width: 300,
+                width: 330,
                 child: CustomTextFieldLogin(
                   hint: "search",
                   suffixIcon: Icon(Icons.search),
                 ),
               ),
               Container(
-                height: 50,
-                width: 50,
+                height: 60,
+                width: 60,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
                   color: Colors.white,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fooddelivery/models/my_cart_model.dart';
+import 'package:fooddelivery/pages/my_cart_page.dart';
 import 'package:fooddelivery/utils/app_style.dart';
 import 'package:fooddelivery/widgets/custom_button_elevated.dart';
 import 'package:fooddelivery/widgets/related_product_list.dart';
@@ -70,7 +71,13 @@ class _ProductBodyState extends State<ProductBody> {
                 style: AppStyle.styleMedium24,
               ),
               CustomButtonElevated(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MyCartPage(),
+                      ));
+                },
                 text: "Add",
                 width: 200,
                 backgroundColor:

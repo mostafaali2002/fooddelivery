@@ -9,7 +9,7 @@ class ProductPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromARGB(226, 246, 246, 246),
+        backgroundColor: Color.fromARGB(248, 246, 246, 246),
         appBar: AppBar(
           elevation: 0,
           backgroundColor: AppStyle.primaryColor,

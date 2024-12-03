@@ -19,33 +19,33 @@ List<BestSellerModel> bestSeller = const [
   BestSellerModel(
       product: Assets.imagesFruite2,
       categorName: "Fruit",
-      productName: "Fig",
+      productName: "peach",
       productSalary: "100"),
   BestSellerModel(
       product: Assets.imagesFruite4,
       categorName: "Fruit",
-      productName: "Fig",
+      productName: "Banana",
       productSalary: "100"),
   BestSellerModel(
       product: Assets.imagesFruite5,
       categorName: "Fruit",
-      productName: "Fig",
+      productName: "Berries",
       productSalary: "100"),
 ];
 List<BestSellerModel> forYou = const [
   BestSellerModel(
       product: Assets.imagesFruite3,
-      categorName: "Fruit",
-      productName: "Fig",
+      categorName: "Vegetable",
+      productName: "Tomatoes",
       productSalary: "100"),
   BestSellerModel(
       product: Assets.imagesFruite6,
-      categorName: "Fruit",
-      productName: "Fig",
+      categorName: "Vegetable",
+      productName: "Lemon",
       productSalary: "100"),
   BestSellerModel(
       product: Assets.imagesFruite4,
       categorName: "Fruit",
-      productName: "Fig",
+      productName: "Banana",
       productSalary: "100"),
 ];

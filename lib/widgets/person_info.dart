@@ -15,7 +15,7 @@ class PersonInfo extends StatelessWidget {
       children: [
         Image.asset(Assets.imagesHomeShape),
         const Positioned(
-          left: 170,
+          left: 150,
           top: 60,
           child: CircleAvatar(
             radius: 40,
@@ -23,22 +23,22 @@ class PersonInfo extends StatelessWidget {
           ),
         ),
         const Positioned(
-          left: 160,
+          left: 140,
           top: 150,
           child: WelcomName(),
         ),
         const Positioned(
-          left: 145,
+          left: 125,
           top: 170,
           child: PersonLocation(),
         ),
         Positioned(
-          bottom: 100,
+          bottom: 70,
           left: 0,
           child: Row(
             children: [
               const SizedBox(
-                width: 330,
+                width: 300,
                 child: CustomTextFieldLogin(
                   hint: "search",
                   suffixIcon: Icon(Icons.search),

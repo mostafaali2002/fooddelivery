@@ -26,7 +26,7 @@ class RelatedProductCard extends StatelessWidget {
         ),
         Positioned(
           bottom: 20,
-          left: 20,
+          left: 40,
           child: Row(
             children: [
               Text(

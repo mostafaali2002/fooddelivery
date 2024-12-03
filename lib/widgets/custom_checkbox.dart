@@ -11,9 +11,9 @@ class CustomCheckBox extends StatefulWidget {
 }
 
 class _CustomCheckBoxState extends State<CustomCheckBox> {
+  bool isActive = false;
   @override
   Widget build(BuildContext context) {
-    bool isActive = false;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(

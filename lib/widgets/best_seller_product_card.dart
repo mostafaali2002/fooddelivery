@@ -20,6 +20,7 @@ class BestSellerProductCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 26),
         child: Stack(
+          clipBehavior: Clip.none,
           children: [
             Image.asset(
               Assets.imagesHomeShape2,

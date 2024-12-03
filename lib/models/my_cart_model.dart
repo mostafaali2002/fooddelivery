@@ -36,22 +36,22 @@ List<MyCartModel> myProducts = const [
 List<MyCartModel> relatedProducts = const [
   MyCartModel(
       product: Assets.imagesFruite2,
-      productName: "product",
+      productName: "peach",
       productSalary: "100"),
   MyCartModel(
       product: Assets.imagesFruite3,
-      productName: "product",
+      productName: "Tomatoes",
       productSalary: "100"),
   MyCartModel(
       product: Assets.imagesFruite4,
-      productName: "product",
+      productName: "Banana",
       productSalary: "150"),
   MyCartModel(
       product: Assets.imagesFruite5,
-      productName: "product",
+      productName: "Berries",
       productSalary: "150"),
   MyCartModel(
       product: Assets.imagesFruite6,
-      productName: "product",
+      productName: "Lemon",
       productSalary: "150"),
 ];

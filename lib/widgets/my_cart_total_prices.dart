@@ -51,7 +51,7 @@ class MyCartTotalPrices extends StatelessWidget {
                     elevation: 2,
                     backgroundColor: Colors.green,
                     content: Text(
-                      "Booking has been completed successfully",
+                      "completed successfully",
                       style: TextStyle(color: Colors.white),
                     ),
                     duration: Duration(seconds: 4),

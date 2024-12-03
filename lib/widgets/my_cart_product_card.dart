@@ -33,7 +33,7 @@ class _MyCartProductCardState extends State<MyCartProductCard> {
             ),
           ),
           Positioned(
-            right: 60,
+            right: 40,
             top: 20,
             child: Column(
               children: [
@@ -51,8 +51,8 @@ class _MyCartProductCardState extends State<MyCartProductCard> {
             ),
           ),
           Positioned(
-            right: 20,
-            bottom: 40,
+            right: 10,
+            bottom: 30,
             child: Row(
               children: [
                 CustomButtonElevated(

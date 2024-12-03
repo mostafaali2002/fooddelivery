@@ -19,19 +19,26 @@ class HomePage extends StatelessWidget {
             PersonInfo(),
             FoodCategoryList(),
             SizedBox(height: 26),
-            Text(
-              "Best Seller",
-              style: AppStyle.styleBold20,
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Text(
+                "Best Seller",
+                style: AppStyle.styleBold20,
+              ),
             ),
             SizedBox(height: 15),
             BestSellerList(),
             SizedBox(height: 26),
-            Text(
-              "For You",
-              style: AppStyle.styleBold20,
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Text(
+                "For You",
+                style: AppStyle.styleBold20,
+              ),
             ),
             SizedBox(height: 15),
             ForYouList(),
+            SizedBox(height: 15),
           ],
         ),
       ),
